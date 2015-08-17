@@ -6,4 +6,5 @@ includes:
 * mina-examples
 * game-server-examples
 * nio-examples
+* mybatis-examples
 
