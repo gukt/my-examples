@@ -1,0 +1,81 @@
+// 所有子项目的通用配置
+subprojects { 
+    apply plugin: 'java'
+    // apply plugin: 'eclipse'
+    apply plugin: 'idea'
+
+    version '1.0-SNAPSHOT'
+
+    // JVM 版本号要求
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+
+    // java编译的时候缺省状态下会因为中文字符而失败
+    // [compileJava,compileTestJava,javadoc]*.options*.encoding = 'UTF-8'
+    
+    //定义版本号
+    ext {  
+        springVersion           = '4.1.6.RELEASE'  
+        hibernateVersion        = '4.3.5.Final'  
+    } 
+
+    repositories {
+        // 添加国内源，提高下载速度
+        maven { url 'http://maven.oschina.net/content/groups/public/' }
+        mavenLocal()
+        jcenter()
+        mavenCentral()
+    }
+
+    jar {
+        manifest {
+            attributes("Implementation-Title": "Gradle")
+        }
+    }
+
+    configurations { 
+        // 所有需要忽略的包定义在此
+        all*.exclude group: 'commons-httpclient'
+        // all*.exclude group: 'commons-logging'
+        all*.exclude group: 'commons-beanutils', module: 'commons-beanutils'
+    }
+
+    dependencies {
+        // 通用依赖
+        compile(  
+            "org.springframework:spring-context:$springVersion",  
+            
+            "ch.qos.logback:logback-core:1.1.2",
+            "org.slf4j:slf4j-api:1.7.7",
+            "com.google.guava:guava:17.0",
+            
+            'com.fasterxml.jackson.core:jackson-core:2.4.2',
+            'com.fasterxml.jackson.core:jackson-annotations:2.4.2',
+            'com.fasterxml.jackson.core:jackson-databind:2.4.2'
+        )
+
+        // 依赖maven中不存在的jar
+        ext.jarTree = fileTree(dir: 'libs', include: '**/*.jar')
+        ext.rootProjectLibs = new File(rootProject.rootDir, 'libs').getAbsolutePath()
+        ext.jarTree += fileTree(dir: rootProjectLibs, include: '**/*.jar')
+
+        compile jarTree
+
+        // 测试依赖
+        testCompile(  
+            "org.springframework:spring-test:$springVersion",  
+            "junit:junit:4.11"  
+        ) 
+    }
+
+    // 显示当前项目下所有用于 compile 的 jar.
+    task listJars(description: 'Displays all compile jars.') << {
+        configurations.compile.each { File file -> println '    ' + file.name }
+    }
+
+    task createDefaultDirs(description: 'Generates default java project structures') << {
+        sourceSets*.java.srcDirs*.each { it.mkdirs() }
+        sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+    }
+}
+ 
