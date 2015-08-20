@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:component-scan base-package="ktgu.examples.spring.hibernate"/>
+
+    <!-- 启用对@Transactional注解的自动支持 -->
+    <tx:annotation-driven transaction-manager="txManager" />
+
+    <context:property-placeholder location="classpath:data-access.properties"/>
+
+    <!-- Hibernate SessionFactory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="packagesToScan" value="ktgu.examples.spring.hibernate.domain" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.connection.release_mode">${hibernate.connection.release_mode}</prop>
+                <prop key="hibernate.bytecode.use_reflection_optimizer">${hibernate.bytecode.use_reflection_optimizer}</prop>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+                <prop key="sql_format">${sql_format}</prop>
+                <prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth}</prop>
+                <prop key="hibernate.jdbc.fetch_size">${hibernate.jdbc.fetch_size}</prop>
+                <prop key="hibernate.jdbc.batch_size">${hibernate.jdbc.batch_size}</prop>
+                <prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop>
+                <prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- 配置Hibernate数据源 -->
+    <bean id="dataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+        <property name="driver" value="${jdbc.driverClassName}" />
+        <property name="driverUrl" value="${jdbc.driverUrl}" />
+        <property name="user" value="${jdbc.userName}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="prototypeCount" value="5" />
+        <property name="maximumConnectionCount" value="${proxool.maximumConnectionCount}" />
+        <property name="minimumConnectionCount" value="${proxool.minimumConnectionCount}" />
+        <property name="simultaneousBuildThrottle" value="50" />
+        <property name="houseKeepingTestSql" value="select CURRENT_DATE" />
+        <property name="houseKeepingSleepTime" value="90000" />
+    </bean>
+
+    <!-- 配置Hibernate事务管理器 -->
+    <bean id="txManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <!-- 配置事务通知，通知事务管理器作相应处理 -->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes>
+            <!-- 配置所有以find和get开头的方法都是用只读事务处理 -->
+            <tx:method name="find*" read-only="true" />
+            <tx:method name="get*" read-only="true" />
+
+            <!-- 配置其他方法是用默认事务处理方式 -->
+            <tx:method name="*" />
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- 配置AOP,绑定切面与通知，确保当执行到切面时能发出以上定义的通知通知事务管理器进行处理-->
+    <aop:config>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* ktgu.examples.spring.hibernate..*(..))" />
+    </aop:config>
+
+</beans>
