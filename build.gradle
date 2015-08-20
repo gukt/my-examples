@@ -1,5 +1,5 @@
 // 所有子项目的通用配置
-subprojects { 
+subprojects {
     apply plugin: 'java'
     // apply plugin: 'eclipse'
     apply plugin: 'idea'
@@ -7,17 +7,18 @@ subprojects {
     version '1.0-SNAPSHOT'
 
     // JVM 版本号要求
-    sourceCompatibility = 1.7
-    targetCompatibility = 1.7
+    sourceCompatibility = 1.6
+    targetCompatibility = 1.6
 
     // java编译的时候缺省状态下会因为中文字符而失败
     // [compileJava,compileTestJava,javadoc]*.options*.encoding = 'UTF-8'
-    
+
     //定义版本号
-    ext {  
-        springVersion           = '4.1.6.RELEASE'  
-        hibernateVersion        = '4.3.5.Final'  
-    } 
+    ext {
+        springVersion = '4.1.6.RELEASE'
+        hibernateVersion = '4.3.5.Final'
+        logbackVersion = '1.1.2'
+    }
 
     repositories {
         // 添加国内源，提高下载速度
@@ -33,7 +34,7 @@ subprojects {
         }
     }
 
-    configurations { 
+    configurations {
         // 所有需要忽略的包定义在此
         all*.exclude group: 'commons-httpclient'
         // all*.exclude group: 'commons-logging'
@@ -42,16 +43,18 @@ subprojects {
 
     dependencies {
         // 通用依赖
-        compile(  
-            "org.springframework:spring-context:$springVersion",  
-            
-            "ch.qos.logback:logback-core:1.1.2",
-            "org.slf4j:slf4j-api:1.7.7",
-            "com.google.guava:guava:17.0",
-            
-            'com.fasterxml.jackson.core:jackson-core:2.4.2',
-            'com.fasterxml.jackson.core:jackson-annotations:2.4.2',
-            'com.fasterxml.jackson.core:jackson-databind:2.4.2'
+        compile(
+                "org.springframework:spring-context:$springVersion",
+
+                "ch.qos.logback:logback-core:$logbackVersion",
+                "ch.qos.logback:logback-classic:$logbackVersion",
+
+                "org.slf4j:slf4j-api:1.7.7",
+                "com.google.guava:guava:17.0",
+
+                'com.fasterxml.jackson.core:jackson-core:2.4.2',
+                'com.fasterxml.jackson.core:jackson-annotations:2.4.2',
+                'com.fasterxml.jackson.core:jackson-databind:2.4.2'
         )
 
         // 依赖maven中不存在的jar
@@ -62,10 +65,10 @@ subprojects {
         compile jarTree
 
         // 测试依赖
-        testCompile(  
-            "org.springframework:spring-test:$springVersion",  
-            "junit:junit:4.11"  
-        ) 
+        testCompile(
+                "org.springframework:spring-test:$springVersion",
+                "junit:junit:4.11"
+        )
     }
 
     // 显示当前项目下所有用于 compile 的 jar.
@@ -78,4 +81,28 @@ subprojects {
         sourceSets*.resources.srcDirs*.each { it.mkdirs() }
     }
 }
- 
+
+project("spring") {
+    description = "Spring examples"
+
+    dependencies {
+        compile(
+                "org.springframework:spring-tx:$springVersion",
+                "org.springframework:spring-jdbc:$springVersion",
+                "org.springframework:spring-orm:$springVersion",
+
+
+                "org.springframework.data:spring-data-jpa:1.8.2.RELEASE",
+
+                "org.hibernate:hibernate-core:$hibernateVersion",
+                "org.hibernate:hibernate-validator:5.1.2.Final",
+
+                "mysql:mysql-connector-java:5.1.6",
+                "org.logicalcobwebs:proxool:0.9.1",
+                "org.logicalcobwebs:proxool-cglib:0.9.1",
+                "org.aspectj:aspectjweaver:1.7.4",
+
+
+        )
+    }
+}

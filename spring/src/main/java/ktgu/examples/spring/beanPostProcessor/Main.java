@@ -9,14 +9,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Created by ktgu on 15/8/17.
  */
 public class Main {
-    static Logger logger = LoggerFactory.getLogger(Main.class);
+    public static Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
-        String path = Main.class.getResource(".").getPath();
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("classpath*:context-bean-post-processor.xml");
 
-        logger.info("path:{}", path);
+        Foo foo =context.getBean(Foo.class );
+        foo.bar();
 
-        AbstractApplicationContext context = new ClassPathXmlApplicationContext(path + "context.xml");
         context.close();
     }
 }

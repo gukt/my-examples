@@ -7,6 +7,11 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.core.Ordered;
 
+/**
+ * 每个Bean实例化完成后，就行‘初始化’过程中将会执行该对象定义的逻辑
+ *
+ * BeanPostProcessor可以实现Ordered接口，以决定它们的执行顺序
+ */
 public class MyBeanPostProcessor1 implements BeanPostProcessor, Ordered {
     static Logger logger = LoggerFactory.getLogger(MyBeanPostProcessor1.class);
 
