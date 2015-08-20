@@ -32,7 +32,7 @@
         </property>
     </bean>
 
-    <!-- 配置Hibernate数据源 -->
+    <!-- 配置数据源 -->
     <bean id="dataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
         <property name="driver" value="${jdbc.driverClassName}" />
         <property name="driverUrl" value="${jdbc.driverUrl}" />
