@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="c6e25766-8d82-477e-9b2d-1b5d40c9ef8a" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\build\classes\main\ktgu\examples\spring\beanPostProcessor\Foo.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\build\classes\main\ktgu\examples\spring\beanPostProcessor\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\build\classes\main\ktgu\examples\spring\beanPostProcessor\MyBeanPostProcessor1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\build\classes\main\ktgu\examples\spring\beanPostProcessor\MyBeanPostProcessor2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\build\libs\spring-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\build\resources\main\logback.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\build\tmp\jar\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\src\main\java\ktgu\examples\spring\beanPostProcessor\Foo.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\src\main\java\ktgu\examples\spring\beanPostProcessor\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\src\main\java\ktgu\examples\spring\beanPostProcessor\MyBeanPostProcessor1.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\src\main\java\ktgu\examples\spring\beanPostProcessor\MyBeanPostProcessor2.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\src\main\java\ktgu\examples\spring\beanPostProcessor\context.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\src\main\resources\logback.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ktgu-examples.iws" />
@@ -1140,7 +1127,7 @@
       <updated>1439807119475</updated>
       <workItem from="1439807121199" duration="757000" />
       <workItem from="1444716219609" duration="1066000" />
-      <workItem from="1444717308332" duration="872000" />
+      <workItem from="1444717308332" duration="1193000" />
     </task>
     <task id="LOCAL-00001" summary="1. rename 'spring' to 'spring-examples'">
       <created>1444717840444</created>
@@ -1148,11 +1135,17 @@
       <option name="project" value="LOCAL" />
       <updated>1444717840444</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="rename the project 'spring' to 'spring-examples'">
+      <created>1444718233904</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1444718233904</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2695000" />
+    <option name="totallyTimeSpent" value="3016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1200,7 +1193,8 @@
   <component name="VcsManagerConfiguration">
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="1. rename 'spring' to 'spring-examples'" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. rename 'spring' to 'spring-examples'" />
+    <MESSAGE value="rename the project 'spring' to 'spring-examples'" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename the project 'spring' to 'spring-examples'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
