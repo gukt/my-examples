@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ktgu-examples.iml" filepath="$PROJECT_DIR$/ktgu-examples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/misc-examples/misc-examples.iml" filepath="$PROJECT_DIR$/misc-examples/misc-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-examples.iml" filepath="$PROJECT_DIR$/my-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-examples/spring-examples.iml" filepath="$PROJECT_DIR$/spring-examples/spring-examples.iml" />
     </modules>
   </component>
 </project>

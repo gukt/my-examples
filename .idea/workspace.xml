@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6e25766-8d82-477e-9b2d-1b5d40c9ef8a" name="Default" comment="" />
+    <list default="true" readonly="true" id="c6e25766-8d82-477e-9b2d-1b5d40c9ef8a" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\ktgu-examples.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\my-examples\spring\spring.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ktgu-examples.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/spring/.gradle/" />
@@ -9,6 +17,10 @@
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/spring-examples/.gradle/" />
+    <ignored path="$PROJECT_DIR$/spring-examples/build/" />
+    <ignored path="$PROJECT_DIR$/misc-examples/.gradle/" />
+    <ignored path="$PROJECT_DIR$/misc-examples/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +39,15 @@
         <task path="$PROJECT_DIR$/spring">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/spring-examples">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/misc-examples">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <PATH>
@@ -35,57 +56,7 @@
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
               </PATH_ELEMENT>
               <PATH_ELEMENT>
-                <option name="myItemId" value="ktgu-examples" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":spring" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="ktgu-examples" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":spring" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Dependencies" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="ktgu-examples" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":spring" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="ktgu-examples" />
+                <option name="myItemId" value="my-examples" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
               </PATH_ELEMENT>
             </PATH>
@@ -98,38 +69,10 @@
     <favorites_list name="ktgu-examples" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Foo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring/src/main/java/ktgu/examples/spring/beanPostProcessor/Foo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring/src/main/java/ktgu/examples/spring/beanPostProcessor/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60559005">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.888889">
-              <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -137,19 +80,23 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="ktgu-examples" />
+              <option name="name" value="my-examples" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="ktgu-examples" />
-                <option name="path" value="$PROJECT_DIR$" />
+                <option name="name" value=":misc-examples" />
+                <option name="path" value="$PROJECT_DIR$/misc-examples" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":spring" />
-                <option name="path" value="$PROJECT_DIR$/spring" />
+                <option name="name" value=":spring-examples" />
+                <option name="path" value="$PROJECT_DIR$/spring-examples" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="my-examples" />
+                <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -162,17 +109,17 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'ktgu-examples'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'my-examples'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'ktgu-examples'." />
+                <option name="description" value="Displays all dependencies declared in root project 'my-examples'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'ktgu-examples'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'my-examples'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -187,22 +134,22 @@
                 <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'ktgu-examples'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'my-examples'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'ktgu-examples'." />
+                <option name="description" value="Displays the sub-projects of root project 'my-examples'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'ktgu-examples'." />
+                <option name="description" value="Displays the properties of root project 'my-examples'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'ktgu-examples' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'my-examples' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -299,132 +246,263 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/spring">
+        <entry key="$PROJECT_DIR$/misc-examples">
           <value>
             <list>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':spring'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="description" value="Displays the components produced by project ':misc-examples'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates default java project structures" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="createDefaultDirs" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':spring'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="description" value="Displays all dependencies declared in project ':misc-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':spring'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="description" value="Displays the insight into a specific dependency in project ':misc-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all compile jars." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="listJars" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':spring'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="description" value="Displays the configuration model of project ':misc-examples'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes JVM resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes JVM resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':spring'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="description" value="Displays the sub-projects of project ':misc-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':spring'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="description" value="Displays the properties of project ':misc-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':spring'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="description" value="Displays the tasks runnable from project ':misc-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc-examples" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/spring-examples">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'main'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'main:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'test:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':spring-examples'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates default java project structures" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="createDefaultDirs" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':spring-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':spring-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all compile jars." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="listJars" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':spring-examples'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes JVM resources 'main:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes JVM resources 'test:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':spring-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':spring-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':spring-examples'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'test'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/spring-examples" />
                 <option name="name" value="testClasses" />
               </ExternalTaskPojo>
             </list>
@@ -435,7 +513,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$/../coconut-projects" value="2879588089000" />
-        <entry key="$PROJECT_DIR$" value="2879613993000" />
+        <entry key="$PROJECT_DIR$" value="2889432608400" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -449,6 +527,30 @@
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/misc-examples">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.1.6.RELEASE/15f0b22bf89ed468badbc4eec759af2b916d33e4/spring-context-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.2/2d23694879c2c12f125dac5076bdfd5d771cc4cb/logback-core-1.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/2b8019b6249bb05d81d3a3094e468753e2b21311/slf4j-api-1.7.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.2/ceb72830d95c512b4b300a38f29febc85bdf6e4b/jackson-core-2.4.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.2/6bb52af09372d5064206d47d7887d41671f00f7d/jackson-annotations-2.4.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.2/8e31266a272ad25ac4c089734d93e8d811652c1f/jackson-databind-2.4.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.6.RELEASE/686c13ba57d9423dede9c5d580dcadc5c67a2761/spring-aop-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.6.RELEASE/ce2d409d470948f11fad41ffdf37dcff4d28cd7c/spring-beans-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.6.RELEASE/e2f486124d5dea2d91a9c2ea7d4456bc343ca2cc/spring-core-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.6.RELEASE/8bf70887c2c883a6f6e552dbe46eec35c07adf6a/spring-expression-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/misc-examples" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -476,68 +578,93 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
+                  <entry key="$PROJECT_DIR$/spring-examples">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.1.6.RELEASE/15f0b22bf89ed468badbc4eec759af2b916d33e4/spring-context-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.2/2d23694879c2c12f125dac5076bdfd5d771cc4cb/logback-core-1.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/2b8019b6249bb05d81d3a3094e468753e2b21311/slf4j-api-1.7.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.2/ceb72830d95c512b4b300a38f29febc85bdf6e4b/jackson-core-2.4.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.2/6bb52af09372d5064206d47d7887d41671f00f7d/jackson-annotations-2.4.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.2/8e31266a272ad25ac4c089734d93e8d811652c1f/jackson-databind-2.4.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.6.RELEASE/686c13ba57d9423dede9c5d580dcadc5c67a2761/spring-aop-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.6.RELEASE/ce2d409d470948f11fad41ffdf37dcff4d28cd7c/spring-beans-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.6.RELEASE/e2f486124d5dea2d91a9c2ea7d4456bc343ca2cc/spring-core-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.6.RELEASE/8bf70887c2c883a6f6e552dbe46eec35c07adf6a/spring-expression-4.1.6.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/spring-examples" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
                 </map>
               </option>
-              <option name="name" value="ktgu-examples" />
+              <option name="name" value="spring" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/ant-1.9.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/ant-launcher-1.9.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-base-services-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-base-services-groovy-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-cli-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-core-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-docs-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-launcher-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-messaging-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-model-core-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-model-groovy-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-native-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-open-api-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-resources-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-tooling-api-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-ui-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/gradle-wrapper-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/groovy-all-2.3.10.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-announce-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-antlr-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-build-comparison-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-build-init-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-code-quality-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-dependency-management-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-diagnostics-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-ear-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-ide-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-ide-native-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-ivy-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-jacoco-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-javascript-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-jetty-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-language-groovy-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-language-java-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-language-jvm-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-language-native-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-language-scala-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-maven-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-osgi-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-platform-base-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-platform-jvm-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-platform-native-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-platform-play-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-plugin-development-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-plugin-use-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-plugins-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-publish-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-reporting-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-resources-http-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-resources-s3-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-resources-sftp-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-scala-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-signing-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-sonar-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-testing-native-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/gradle-tooling-api-builders-2.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.4-bin/1lebsnfoptv8qpa10w6kyy5mp/gradle-2.4/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/ant-1.9.3.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/ant-launcher-1.9.3.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-base-services-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-base-services-groovy-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-cli-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-core-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-docs-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-launcher-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-messaging-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-model-core-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-model-groovy-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-native-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-open-api-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-resources-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-tooling-api-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-ui-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/gradle-wrapper-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/groovy-all-2.3.10.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-announce-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-antlr-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-build-comparison-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-build-init-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-code-quality-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-dependency-management-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-diagnostics-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-ear-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-ide-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-ide-native-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-ivy-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-jacoco-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-javascript-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-jetty-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-language-groovy-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-language-java-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-language-jvm-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-language-native-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-language-scala-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-maven-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-osgi-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-platform-base-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-platform-jvm-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-platform-native-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-platform-play-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-plugin-development-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-plugin-use-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-plugins-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-publish-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-reporting-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-resources-http-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-resources-s3-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-resources-sftp-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-scala-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-signing-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-sonar-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-test-kit-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-testing-native-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/gradle-tooling-api-builders-2.7.jar" />
+                  <option value="D:/dev/gradle-2.7/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -555,6 +682,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
       </list>
     </option>
   </component>
@@ -573,11 +701,12 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="701" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -600,8 +729,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -616,101 +745,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ktgu-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ktgu-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ktgu-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ktgu-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ktgu-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ktgu-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ktgu-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ktgu-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ktgu-examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beanPostProcessor" />
+              <option name="myItemId" value="my-examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -720,13 +765,14 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/spring" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.my-examples:misc-examples [createDefaultDirs]">
     <configuration default="false" name="ktgu-examples:spring [createDefaultDirs]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -781,6 +827,24 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="spring" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="my-examples:misc-examples [createDefaultDirs]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/misc-examples" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="createDefaultDirs" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -852,6 +916,74 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -876,6 +1008,15 @@
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -905,9 +1046,6 @@
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -953,24 +1091,39 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
-    <list size="3">
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Gradle.ktgu-examples:spring [createDefaultDirs]" />
       <item index="1" class="java.lang.String" itemvalue="Gradle.ktgu-examples:spring [listJars]" />
       <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.my-examples:misc-examples [createDefaultDirs]" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.ktgu-examples:spring [listJars]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.ktgu-examples:spring [createDefaultDirs]" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.my-examples:misc-examples [createDefaultDirs]" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.ktgu-examples:spring [listJars]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.ktgu-examples:spring [createDefaultDirs]" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" cleanupOnStartRun="true">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -979,42 +1132,44 @@
       <option name="number" value="Default" />
       <updated>1439807119475</updated>
       <workItem from="1439807121199" duration="757000" />
+      <workItem from="1444716219609" duration="1066000" />
+      <workItem from="1444717308332" duration="414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="757000" />
+    <option name="totallyTimeSpent" value="2237000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="701" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39965695" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32956383" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2943038" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2943038" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2484375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39965695" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1027,6 +1182,9 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1041,18 +1199,29 @@
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/spring/src/main/java/ktgu/examples/spring/beanPostProcessor/Foo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/src/main/java/ktgu/examples/spring/beanPostProcessor/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.888889">
+        <state vertical-scroll-proportion="0.0">
           <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
           <folding />
         </state>
@@ -1060,12 +1229,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring/src/main/java/ktgu/examples/spring/beanPostProcessor/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60559005">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.29854098">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring/src/main/java/ktgu/examples/spring/beanPostProcessor/Foo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14927049">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37214363">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2198042">
+          <caret line="59" column="74" selection-start-line="59" selection-start-column="74" selection-end-line="59" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="" />
   </component>
   <component name="masterDetails">
     <states>
@@ -1106,7 +1303,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android API 22 Platform</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1118,7 +1315,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spring</last-edited>
+          <last-edited>misc-examples</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
