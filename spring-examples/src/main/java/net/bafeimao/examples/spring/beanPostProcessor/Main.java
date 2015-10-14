@@ -1,4 +1,4 @@
-package ktgu.examples.spring.beanPostProcessor;
+package net.bafeimao.examples.spring.beanPostProcessor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

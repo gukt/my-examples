@@ -7,8 +7,8 @@ subprojects {
     version '1.0-SNAPSHOT'
 
     // JVM 版本号要求
-    sourceCompatibility = 1.7
-    targetCompatibility = 1.7
+    sourceCompatibility = 1.6
+    targetCompatibility = 1.6
 
     // java编译的时候缺省状态下会因为中文字符而失败
     // [compileJava,compileTestJava,javadoc]*.options*.encoding = 'UTF-8'
@@ -22,6 +22,10 @@ subprojects {
     repositories {
         // 添加国内源，提高下载速度
         maven { url 'http://maven.oschina.net/content/groups/public/' }
+
+        maven { url 'https://oss.sonatype.org/content/repositories/public/'}
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/'}
+
         mavenLocal()
         jcenter()
         mavenCentral()
@@ -43,7 +47,7 @@ subprojects {
     dependencies {
         // 通用依赖
         compile(
-            "ch.qos.logback:logback-core:1.1.2",
+            "ch.qos.logback:logback-classic:1.1.2",
             "org.slf4j:slf4j-api:1.7.7",
         )
 
@@ -91,6 +95,9 @@ project(":misc-examples") {
     dependencies {
         compile(
                 "com.google.guava:guava:18.0",
+                'com.google.protobuf:protobuf-java:2.6.1',
+                "io.grpc:grpc-all:0.9.0",
+                'commons-io:commons-io:2.4'
         )
     }
 }
