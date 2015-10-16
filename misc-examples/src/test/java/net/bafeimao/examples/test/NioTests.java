@@ -19,17 +19,22 @@ public class NioTests {
     private static final String HOST = "localhost";
     private static final int PORT = 3304;
 
+    /**
+     * NOTE: FileChannel无法设置非阻塞模式，它只能工作在阻塞模式下
+     *
+     * @throws IOException
+     */
     @Test
-    public void testReadFromFileByFileChannel() throws IOException {
+    public void testReadFromFileChannel() throws IOException {
         RandomAccessFile file = new RandomAccessFile("c:/111.txt", "rw");
-        FileChannel inChannel = file.getChannel();
+        FileChannel fileChannel = file.getChannel();
 
         ByteBuffer buf = ByteBuffer.allocate(48);
 
-        int bytesRead = inChannel.read(buf);
+        int bytesRead = fileChannel.read(buf);
         while (bytesRead != -1) {
-
             System.out.println("Read " + bytesRead);
+
             buf.flip();
 
             while (buf.hasRemaining()) {
@@ -37,9 +42,37 @@ public class NioTests {
             }
 
             buf.clear();
-            bytesRead = inChannel.read(buf);
+            bytesRead = fileChannel.read(buf);
         }
         file.close();
+    }
+
+
+    @Test
+    public void testWriteToFileChannel() throws IOException {
+        RandomAccessFile file = new RandomAccessFile("c:/111.txt", "rw");
+        FileChannel fileChannel = file.getChannel();
+
+        ByteBuffer buf = ByteBuffer.allocate(48);
+        buf.put("This data is written by testcase".getBytes());
+
+        buf.flip();
+
+        // 由于write()无法保证能写多少字节,因此这里放到while循环体中
+        while(buf.hasRemaining()) {
+            fileChannel.write(buf);
+        }
+
+        // 获取当前文件大小
+        long size =  fileChannel.size();
+
+        // 运行后文件内容被截断了
+        fileChannel.truncate(4);
+
+        // 将通道里尚未写入磁盘的数据强制写到磁盘上，同时将文件元数据写到磁盘上
+        fileChannel.force(true);
+
+        System.out.println("Done!!!");
     }
 
 
@@ -76,39 +109,10 @@ public class NioTests {
             // 连接服务器
             socketChannel.connect(new InetSocketAddress(HOST, PORT));
         } finally {
-            if(socketChannel != null && socketChannel.isOpen()) {
+            if (socketChannel != null && socketChannel.isOpen()) {
                 socketChannel.close();
             }
         }
     }
 
-    @Test
-    public void testSocketChannelWriteOp() throws IOException {
-        SocketChannel socketChannel = SocketChannel.open();
-        socketChannel.connect(new InetSocketAddress(HOST, PORT));
-
-        socketChannel.configureBlocking(false);
-
-        ByteBuffer buf = ByteBuffer.allocate(32);
-        buf.put("Hey man!!!".getBytes());
-
-        buf.flip();
-
-        // 由于write()方法无法保证能写多少字节到SocketChannel,因此这里放到while循环体中
-        while(buf.hasRemaining()) {
-            socketChannel.write(buf);
-        }
-
-        System.out.println("Successfully written the data to channel");
-    }
-    @Test
-    public void testSocketChannelReadOp() throws IOException {
-        SocketChannel socketChannel = SocketChannel.open();
-        socketChannel.connect(new InetSocketAddress(HOST, PORT));
-
-        ByteBuffer buf = ByteBuffer.allocate(32);
-
-        // 从channel中读取数据到buffer中
-        socketChannel.read(buf);
-    }
 }

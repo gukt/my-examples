@@ -1,90 +1,120 @@
 package net.bafeimao.examples.nio;
 
-import com.sun.org.apache.bcel.internal.generic.Select;
-
 import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 
 /**
  * Created by Administrator on 2015/10/14.
  */
 public class TcpServer {
-    private static final int BUFFER_SIZE = 1024;
+    private int port = 3001;
 
-    private static final int TIMEOUT = 3000;
-
-    private static final int PORT = 3001;
-
-    public static void main(String[] args) throws IOException {
-        Selector selector = Selector.open();
-
-        ServerSocketChannel channel = ServerSocketChannel.open();
-        channel.socket().bind(new InetSocketAddress(PORT));
-        channel.configureBlocking(false);
-
-        channel.register(selector, SelectionKey.OP_ACCEPT);
-
-        while (true) {
-            Iterator<SelectionKey> keyIterator = selector.selectedKeys().iterator();
-            for (Iterator<SelectionKey> it = selector.selectedKeys().iterator(); it.hasNext(); ) {
-                selector.select(TIMEOUT);
-                SelectionKey key = it.next();
-
-                try {
-                    if (key.isAcceptable()) {
-                        System.out.println("ÓĞ¿Í»§¶ËÕıÔÚÁ¬½Ó¡£¡£¡£");
-                    }
-
-                    if(key.isReadable()) {
-                        System.out.println("¿Í»§¶ËÓĞÇëÇó");
-                    }
-
-                    if(key.isValid() && key.isWritable()) {
-                        System.out.println("ÓĞÊı¾İ·µ»Ø¸ø¿Í»§¶Ë");
-                    }
-                } catch (Exception e) {
-
-                }
-            }
-        }
+    public TcpServer() {
     }
 
+    public TcpServer(int port) {
+        this.port = port;
+    }
 
-    public static void main1(String[] args) throws IOException {
+    public void start()  {
+        System.out.println("Server is starting ...");
 
-//        while (true) {
-//            // µÈ´ıÄ³ĞÅµÀ¾ÍĞ÷(»ò³¬Ê±)
-//            if (selector.select(TimeOut) == 0) {// ¼àÌı×¢²áÍ¨µÀ£¬µ±ÆäÖĞÓĞ×¢²áµÄ IO
-//                // ²Ù×÷¿ÉÒÔ½øĞĞÊ±£¬¸Ãº¯Êı·µ»Ø£¬²¢½«¶ÔÓ¦µÄ
-//                // SelectionKey ¼ÓÈë selected-key
-//                // set
-//                System.out.print("¶À×ÔµÈ´ı.");
-//                continue;
-//            }
-//            // È¡µÃµü´úÆ÷.selectedKeys()ÖĞ°üº¬ÁËÃ¿¸ö×¼±¸ºÃÄ³Ò»I/O²Ù×÷µÄĞÅµÀµÄSelectionKey
-//            // Selected-key Iterator ´ú±íÁËËùÓĞÍ¨¹ı select() ·½·¨¼à²âµ½¿ÉÒÔ½øĞĞ IO ²Ù×÷µÄ channel
-//            // £¬Õâ¸ö¼¯ºÏ¿ÉÒÔÍ¨¹ı selectedKeys() ÄÃµ½
-//            Iterator<SelectionKey> keyIter = selector.selectedKeys().iterator();
-//            while (keyIter.hasNext()) {
-//                SelectionKey key = keyIter.next();
-//                SelectionKey key1;
-//                if (keyIter.hasNext()) {
-//                    key1 = keyIter.next();
-//                }
-//                try {
-//
-//                } catch (IOException ex) {
-//                    // ³öÏÖIOÒì³££¨Èç¿Í»§¶Ë¶Ï¿ªÁ¬½Ó£©Ê±ÒÆ³ı´¦Àí¹ıµÄ¼ü
-//                    keyIter.remove();
-//                    continue;
-//                }
-//                // ÒÆ³ı´¦Àí¹ıµÄ¼ü
-//                keyIter.remove();
-//            }
-//        }
+        Selector selector = null;
+        ServerSocketChannel serverSocketChannel = null;
+
+        try {
+            selector = Selector.open();
+
+            // æ‰“å¼€ä¸€ä¸ªServerSocketChannelå¹¶ç»‘å®šåˆ°æŒ‡å®šç«¯å£
+            serverSocketChannel = ServerSocketChannel.open();
+            serverSocketChannel.bind(new InetSocketAddress(port));
+
+            // ä¸Selectorä¸€èµ·ä½¿ç”¨æ—¶ï¼Œå¿…é¡»å°†é€šé“é…ç½®æˆéé˜»å¡çš„
+            // NOTE: FileChannelæ˜¯é˜»å¡çš„ï¼Œå› æ­¤ä¸èƒ½é…åˆSelectorä¸€èµ·ä½¿ç”¨
+            serverSocketChannel.configureBlocking(false);
+
+            // å°†é€šé“æ³¨å†Œåˆ°Selectorä¸­ï¼Œè¯¥æ–¹æ³•è¿”å›ä¸€ä¸ªä¸Channelå…³è”çš„SelectionKeyï¼Œ
+            // ç¬¬äºŒä¸ªå‚æ•°å°±æ˜¯è®¾ç½®è¿™ä¸ªSelectionKeyæ„Ÿå…´è¶£çš„äº‹ä»¶ï¼Œä»¥ä¾¿Selectoråœ¨ä¸‹æ¬¡é€‰æ‹©æ—¶åˆ¤æ–­æ˜¯å¦è¦å°†è¯¥Keyæ”¾å…¥SelectedKeysé›†åˆä¸­
+
+            /**
+             * é€šé“å°±ç»ªäº‹ä»¶æœ‰ï¼š
+             * è¿æ¥å°±ç»ªï¼šè¯¥é€šé“å·²æˆåŠŸè¿æ¥åˆ°è¿œç«¯
+             * æ¥å—å°±ç»ªï¼šè¯¥é€šé“å·²æˆåŠŸæ¥å—æ–°è¿›å…¥çš„è¿œç«¯è¿æ¥
+             * è¯»å°±ç»ªï¼šé€šé“ä¸­æœ‰æ•°æ®å¯è¯»
+             * å†™å°±ç»ªï¼šé€šé“ä¸­æœ‰æ•°æ®å¯å†™
+             */
+            serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+            System.out.println("Server was successfully started, listening onï¼š" +port);
+
+            while (true) {
+
+                selector.select();
+
+                for (Iterator<SelectionKey> iterator = selector.selectedKeys().iterator(); iterator.hasNext(); ) {
+                    SelectionKey key = iterator.next();
+
+                    if (key.isConnectable()) {
+                        ((SocketChannel) key.channel()).finishConnect();
+                    } else if (key.isAcceptable()) {
+                        // Accept the connection
+                        SocketChannel clientChannel = serverSocketChannel.accept();
+                        clientChannel.configureBlocking(false);
+
+
+                        System.out.println("Accepted an new connection:[" + clientChannel.getRemoteAddress() + "]");
+
+                        // å°†ä»£è¡¨å®¢æˆ·ç«¯è¿æ¥çš„Socketä¹Ÿæ³¨å†Œåˆ°selectorä¸­
+                        clientChannel.register(selector, SelectionKey.OP_READ);
+                    } else if (key.isReadable()) {
+                        SocketChannel clientChannel = (SocketChannel) key.channel();
+                        ByteBuffer buffer = ByteBuffer.allocate(256);
+                        clientChannel.read(buffer);
+                        String request = new String(buffer.array()).trim();
+                        System.out.println("Message read from client: " + request);
+
+                        if (request.equals("Bye.")) {
+                            clientChannel.close();
+                            System.out.println("The client[" + clientChannel.getRemoteAddress() + "] is going away ...");
+                        }
+                     } else if (key.isWritable()) {
+                        System.out.println("Writing data...");
+
+                        SocketChannel clientChannel = (SocketChannel) key.channel();
+
+                        ByteBuffer buffer = ByteBuffer.wrap("hello".getBytes("UTF-8"));
+                        //ByteBuffer buffer = (ByteBuffer) key.attachment();
+
+                        if (!buffer.hasRemaining()) {
+                            clientChannel.write(buffer);
+                        }
+                    }
+
+                    // ä¸è¦å¿˜è®°äº†ç§»é™¤åˆšåˆšå¤„ç†çš„Keyï¼ŒSelectorä¸ä¼šåœ¨è¿™ä¸ªé›†åˆä¸Šåšç§»é™¤SelectionKeyæ“ä½œ
+                    iterator.remove();
+                }
+            }
+        } catch (Exception e) {
+            throw new RuntimeException("Server failure: " + e.getMessage());
+        } finally {
+            try {
+                selector.close();
+                serverSocketChannel.socket().close();
+                serverSocketChannel.close();
+            } catch (Exception ignored) {
+            }
+        }
+
+    }
+
+    public static void main(String[] args) {
+        TcpServer server = new TcpServer(3304);
+        server.start();
     }
 }

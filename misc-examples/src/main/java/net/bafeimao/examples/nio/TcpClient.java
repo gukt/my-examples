@@ -17,24 +17,42 @@ public class TcpClient {
     private String host;
     private int port;
 
+    public TcpClient( int port) {
+        this("localhost",port);
+    }
+
     public TcpClient(String host, int port) {
         this.host = host;
         this.port = port;
     }
 
-    public void connect() throws IOException {
-        this.socketChannel = SocketChannel.open(new InetSocketAddress(host, port));
+    public void connect()   {
+        try {
+            this.socketChannel = SocketChannel.open(new InetSocketAddress(host, port));
 
-        this.socketChannel.configureBlocking(false);
+            this.socketChannel.configureBlocking(false);
 
-        // Open selector
-        this.selector = Selector.open();
+            // Open selector
+            this.selector = Selector.open();
 
-        // Register client channel to selector
-        this.socketChannel.register(selector, SelectionKey.OP_READ);
+            // Register client channel to selector
+            this.socketChannel.register(selector, SelectionKey.OP_READ);
 
-        Processor process = new Processor(selector);
-        process.start();
+            Processor process = new Processor(selector);
+            process.start();
+        }catch (Exception e) {
+            System.out.println("Failed to connect to server, exception:" + e.getMessage());
+        }
+    }
+
+    public void write(String data) {
+        try {
+            ByteBuffer buffer = ByteBuffer.wrap(data.getBytes());
+            this.socketChannel.write(buffer);
+        }
+        catch(Exception e) {
+            System.out.println("Failed to write data to server.");
+        }
     }
 
     class Processor extends Thread {
@@ -48,7 +66,7 @@ public class TcpClient {
         public void run() {
             try {
                 while (selector.select() > 0) {
-                    // 遍历每个有可用IO操作Channel对应的SelectionKey
+                    // 閬嶅巻姣忎釜鏈夊彲鐢↖O鎿嶄綔Channel瀵瑰簲鐨凷electionKey
                     for (SelectionKey selectionKey : selector.selectedKeys()) {
                         if (selectionKey.isReadable()) {
                             SocketChannel socketChannel = (SocketChannel) selectionKey.channel();
@@ -60,17 +78,28 @@ public class TcpClient {
                             String receivedString = Charset.forName("UTF-8").newDecoder().decode(buffer).toString();
                             System.out.println("RECEIVED: " + receivedString + ", from:" + socketChannel.socket().getRemoteSocketAddress());
 
-                            // 为下一次读取作准备
+                            // 涓轰笅涓�娆¤鍙栦綔鍑嗗
                             selectionKey.interestOps(SelectionKey.OP_READ);
                         }
 
-                        // 删除正在处理的SelectionKey
+                        // 鍒犻櫎姝ｅ湪澶勭悊鐨凷electionKey
                         selector.selectedKeys().remove(selectionKey);
                     }
                 }
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
+        }
+    }
+
+    public static void main(String[] args) {
+        TcpClient client = new TcpClient(3304);
+        client.connect();
+
+        for(int i =0;i < 3;i++) {
+            client.write("message" + i);
+
+            //TimeUnit.SECONDS.sleep(3);
         }
     }
 }
