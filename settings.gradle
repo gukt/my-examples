@@ -17,8 +17,8 @@ include 'services:webservice'
 */
 
 // rootProject.name = 'my-examples'
-include 'spring-examples'
-include 'misc-examples'
-include 'web-examples'
-include 'mybatis-examples'
-include 'zeromq-examples'
+include 'spring'
+include 'misc'
+include 'web'
+include 'mybatis'
+include 'zeromq'

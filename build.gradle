@@ -75,7 +75,7 @@ subprojects {
     }
 }
 
-project(":spring-examples") {
+project(":spring") {
     dependencies {
         compile(
                 "org.springframework:spring-context:$springVersion",
@@ -91,7 +91,7 @@ project(":spring-examples") {
     }
 }
 
-project(":misc-examples") {
+project(":misc") {
     dependencies {
         compile(
                 "com.google.guava:guava:18.0",
