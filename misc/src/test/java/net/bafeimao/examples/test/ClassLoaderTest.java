@@ -3,40 +3,38 @@ package net.bafeimao.examples.test;
  
  
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ClassLoaderTest {
+	private static Logger LOGGER = LoggerFactory.getLogger(ClassLoaderTest.class);
 
 	@Test
-	public void testPrintClassLoaderInCurrentEnviornment() {
-		Class<?> c;
-		ClassLoader cl;
-		cl = ClassLoader.getSystemClassLoader();
-		System.out.println(cl); // 该行输出表明当前系统类初始化器（SystemClassLoader）为：sun.misc.Launcher$AppClassLoader
-		
-		// 第一次输出：sun.misc.Launcher$ExtClassLoader表明AppClassLoader的父ClassLoader是ExtClassLoader，
-		// 第二次輸出：null，表明ExtClassLoader的父亲是JVM的bootstrap ClassLoader
+	public void testPrintClassLoaderInCurrentEnvironment() {
+		ClassLoader cl = ClassLoader.getSystemClassLoader();
+
+		// sun.misc.Launcher$AppClassLoader
+		System.out.println(cl.getClass().getName());
+
+		// 第一次输出sun.misc.Launcher$ExtClassLoader表明AppClassLoader的父ClassLoader是ExtClassLoader，
+		// 第二次輸出null，表明ExtClassLoader没有parent（换句话说就是，ExtClassLoader的父亲是JVM的BootstrapClassLoader，因为它并非是Java类，因此为这里为null）
 		while (cl != null) {
-			cl = cl.getParent();  
+			cl = cl.getParent();
  			System.out.println(cl);
 		}
+
 		try {
-			// 核心类java.lang.Object是由bootstrap装载的
-			c = Class.forName("java.lang.Object");
-			cl = c.getClassLoader();
-			System.out.println("java.lang.Object's loader is  " + cl);
-			c = Class.forName("ktgu.lab.potato.samples.spike.ClassLoaderTest");
-			cl = c.getClassLoader();
-			System.out.println("LoaderSample1's loader is  " + cl);
+			// 这里输出null，隐含的语义是表示该核心类Object是由BootstrapClassLoader装载的
+			Class<?> c = Class.forName("java.lang.Object");
+			System.out.println("ClassLoader: " + c.getClassLoader());
+
+			// 我们自定义的'Foo'类是由'sun.misc.Launcher$AppClassLoader'装载的
+			c = Class.forName(Foo.class.getName());
+			System.out.println("ClassLoader: " + c.getClassLoader());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
-	@Test
-	public void testSomthingLoadedByBootstrapClassLoader(){
-		// URL[] urls=sun.misc.Launcher.getBootstrapClassPath().getURLs();
-		// for (int i = 0; i < urls.length; i++) {
-		// System.out.println(urls[i]);
-		// }
-	}
+
+	class Foo {}
 }
