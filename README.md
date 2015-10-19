@@ -1,4 +1,4 @@
-# Here is all my examples
+# Here are all my examples
 
 includes:
 
