@@ -22,6 +22,7 @@ subprojects {
     repositories {
         // 添加国内源，提高下载速度
         maven { url 'http://maven.oschina.net/content/groups/public/' }
+        maven { url 'http://maven.oschina.net/content/groups/thirdparty/' }
 
         maven { url 'https://oss.sonatype.org/content/repositories/public/'}
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots/'}
@@ -94,11 +95,70 @@ project(":spring") {
 project(":misc") {
     dependencies {
         compile(
+                "org.springframework:spring-context:$springVersion",
                 "com.google.guava:guava:18.0",
                 'com.google.protobuf:protobuf-java:2.6.1',
                 "io.grpc:grpc-all:0.9.0",
-                'commons-io:commons-io:2.4'
+                'commons-io:commons-io:2.4',
+                'org.apache.mina:mina-core:2.0.7',
+                'org.zeromq:jeromq:0.3.5',
+                'org.quartz-scheduler:quartz:2.2.2'
+
+
         )
     }
 }
+
+project(":zeromq") {
+    dependencies {
+        compile(
+                'org.zeromq:jeromq:0.3.5',
+        )
+    }
+}
+
+project(":mybatis") {
+    dependencies {
+        compile(
+                'org.mybatis:mybatis:3.3.0'
+
+        )
+    }
+}
+
+project(":web") {
+    dependencies {
+        compile(
+                "org.springframework:spring-context:$springVersion",
+                "org.springframework:spring-oxm:$springVersion",
+                "org.springframework:spring-webmvc:$springVersion",
+                'org.springframework:spring-support:2.0.8',
+
+                "org.hibernate:hibernate-core:$hibernateVersion",
+                'org.hibernate:hibernate-validator:5.2.2.Final',
+
+                'javax.servlet:javax.servlet-api:3.1.0',
+                'javax.persistence:persistence-api:1.0.2',
+                'javax.validation:validation-api:1.1.0.Final',
+                "com.google.guava:guava:18.0",
+                "com.google.code:kaptcha:2.3.2",
+                'javax.mail:mail:1.4.7',
+                'org.apache.velocity:velocity:1.7',
+
+                'commons-codec:commons-codec:1.10',
+
+                'com.fasterxml.jackson.core:jackson-core:2.4.2',
+                'com.fasterxml.jackson.core:jackson-annotations:2.4.2',
+                'com.fasterxml.jackson.core:jackson-databind:2.4.2',
+
+        )
+
+        testCompile(
+                "org.springframework:spring-test:$springVersion",
+                'org.hamcrest:hamcrest-all:1.3'
+
+        )
+    }
+}
+
 
