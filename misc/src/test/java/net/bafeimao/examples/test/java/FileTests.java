@@ -5,22 +5,37 @@ import java.io.IOException;
 
 import net.bafeimao.examples.util.FileUtils;
 
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * file.mkdir()需要父目录存在，如果不存在将返回false表示创建目录不成功
+ */
 public class FileTests {
 
-	// java.io.IOException: The system cannot find the path specified
-	@Test(expected = IOException.class)
-	public void testCreateNewFileWithoutParentPath() throws IOException {
-		File file = new File("d:/path/to/file.txt");
-		boolean isNew = file.createNewFile();
-		System.out.println(isNew);
+	@Test
+	public void testNewFileAndDeleteFile() throws IOException {
+		File file = new File("c:/tmp.txt");
 
-		// 测试结束，清理
-		if (file.exists()) {
-			file.delete();
+		// 如果沒有就创建新文件
+		if(!file.exists()) {
+			boolean success = file.createNewFile();
+			Assert.assertTrue(success);
 		}
+
+		// 删除临时文件
+		if(file.exists()) {
+			boolean deleted = file.delete();
+			Assert.assertTrue(deleted);
+		}
+	}
+
+	@Test
+	public void testMakeDir() {
+		File file = new File("c:/foo/bar");
+		file.mkdir();
 	}
 
 	@Test

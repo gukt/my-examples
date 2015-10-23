@@ -6,6 +6,39 @@ import com.google.common.base.Objects;
 
 public class StringTests {
 
+	public final String GREETING = "Greeting!";
+
+	@Test
+	public void test211() {
+		String a = "hello2";
+		String b = "hello";
+		String c = b + 2;
+		String d = "hello" + 2;
+		System.out.println((a == c));
+		System.out.println(a==d);
+	}
+
+	@Test
+	public void test31() {
+		String s1 = "";
+		int count = 10000;
+		long t1 = System.currentTimeMillis();
+		for(int i = 0; i <count;i++	) {
+			s1 += i;
+		}
+		System.out.println("total:" + (System.currentTimeMillis() - t1));
+
+		StringBuilder sb = new StringBuilder();
+		  t1 = System.currentTimeMillis();
+		for(int i = 0; i <count;i++	) {
+			sb.append(i);
+		}
+		System.out.println("total:" + (System.currentTimeMillis() - t1));
+
+		System.out.println(s1);
+		System.out.println(sb.toString());
+	}
+
 	@Test
 	public void test1() {
 		StringBuilder sb = new StringBuilder();

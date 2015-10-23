@@ -93,8 +93,10 @@ public class HotSwapClassLoader extends ClassLoader {
     protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
         Class<?> clazz = null;
 
-        // 每个类加载器都维护有自己的一份已加载类名字空间,其中不能出现两个同名的类。凡是通过该类加载器加载的类，无论是直接的还是间接的，都保存在自己的名字空间.
-        // 该方法即在该名字空间中寻找指定的类是否存在，如果存在旧返回给类的引用；否则就返回null;这里的直接是指存在于该类加载器的加载路径上并由该加载器完成加载,
+        // 每个类加载器都维护有自己的一份已加载类名字空间,其中不能出现两个同名的类。
+        // 凡是通过该类加载器加载的类，无论是直接的还是间接的，都保存在自己的名字空间.
+        // 该方法即在该名字空间中寻找指定的类是否存在，如果存在旧返回给类的引用；
+        // 否则就返回null;这里的直接是指存在于该类加载器的加载路径上并由该加载器完成加载,
         // 间接是指由类加载器把类的加载工作委托给其他类加载器完成类的实际加载
 
         // landon:1.因在loadClass之前，我们调用了{@link #defineClassFromPath}->通过调用{@link

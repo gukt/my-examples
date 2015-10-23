@@ -1,5 +1,8 @@
 package net.bafeimao.examples.hotswap;
 
+import sun.net.spi.nameservice.dns.DNSNameService;
+
+import javax.crypto.Cipher;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
@@ -48,6 +51,10 @@ public class HotSwapExample {
     }
 
     public void systemLoad() throws Exception {
+        System.out.println(Object.class.getClassLoader());
+        System.out.println(DNSNameService.class.getClassLoader());
+        System.out.println(Foo.class.getClassLoader());
+
         Foo foo = new Foo();
         foo.say();
     }

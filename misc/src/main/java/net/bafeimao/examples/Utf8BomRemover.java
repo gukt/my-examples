@@ -12,7 +12,7 @@ import org.apache.commons.io.FilenameUtils;
 public class Utf8BomRemover extends DirectoryWalker {
 
     public static void main(String[] args) throws IOException {
-        //É¾³ýÖ¸¶¨ÎÄ¼þ¼ÐÏÂ£¨º¬×ÓÎÄ¼þ¼Ð£©ËùÓÐjavaÎÄ¼þµÄBOM£¬Èô¹¹ÔìÆ÷ÖÐ²ÎÊýÎªnullÔòÉ¾³ýËùÓÐÎÄ¼þÍ·²¿BOM
+        //É¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½javaï¿½Ä¼ï¿½ï¿½ï¿½BOMï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Îªnullï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Í·ï¿½ï¿½BOM
         new Utf8BomRemover("java").start(new File("D:\\workspace\\InuServer\\src"));
     }
 
@@ -24,7 +24,7 @@ public class Utf8BomRemover extends DirectoryWalker {
     }
 
     /**
-     * Æô¶¯¶ÔÄ³¸öÎÄ¼þ¼ÐµÄÉ¸Ñ¡
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ðµï¿½É¸Ñ¡
      */
     @SuppressWarnings("unchecked")
     public void start(File rootDir) throws IOException {
@@ -34,13 +34,13 @@ public class Utf8BomRemover extends DirectoryWalker {
     protected void handleFile(File file, int depth, Collection results) throws IOException {
         if (extension == null
                 || extension.equalsIgnoreCase(FilenameUtils.getExtension(file.toString()))) {
-            //µ÷ÓÃ¾ßÌåÒµÎñÂß¼­£¬ÆäÊµÕâÀï²»½ö¿ÉÒÔÊµÏÖÉ¾³ýBOM£¬»¹¿ÉÒÔ×öºÜ¶àÏë¸ÉµÄÊÂÇé¡£
+            //ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï²»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½É¾ï¿½ï¿½BOMï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¶ï¿½ï¿½ï¿½Éµï¿½ï¿½ï¿½ï¿½é¡£
             remove(file);
         }
     }
 
     /**
-     * ÒÆ³ýUTF-8µÄBOM
+     * ï¿½Æ³ï¿½UTF-8ï¿½ï¿½BOM
      */
     private void remove(File file) throws IOException {
         byte[] bs = FileUtils.readFileToByteArray(file);
