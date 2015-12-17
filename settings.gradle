@@ -16,9 +16,10 @@ include 'api'
 include 'services:webservice'
 */
 
-// rootProject.name = 'my-examples'
+rootProject.name = 'my-examples'
 include 'spring'
 include 'misc'
 include 'web'
 include 'mybatis'
 include 'zeromq'
+include 'velocity-example'

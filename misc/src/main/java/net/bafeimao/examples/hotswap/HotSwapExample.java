@@ -14,6 +14,9 @@ public class HotSwapExample {
     public static void main(String[] args) throws Exception {
         HotSwapExample example = new HotSwapExample();
 
+        assert example == null;
+
+
         while (true) {
             example.systemLoad();
             example.hotswapLoad();

@@ -21,11 +21,10 @@ subprojects {
 
     repositories {
         // 添加国内源，提高下载速度
-        maven { url 'http://maven.oschina.net/content/groups/public/' }
-        maven { url 'http://maven.oschina.net/content/groups/thirdparty/' }
+//        maven { url 'http://maven.oschina.net/content/groups/public/' }
+//        maven { url 'http://maven.oschina.net/content/groups/thirdparty/' }
 
-        maven { url 'https://oss.sonatype.org/content/repositories/public/'}
-        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/'}
+        maven { url 'http://localhost:8081/nexus/content/groups/public/' }
 
         mavenLocal()
         jcenter()
