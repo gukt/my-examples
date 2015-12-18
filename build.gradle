@@ -129,7 +129,7 @@ subprojects {
 //    }
 //}
 
-project(":web-app") {
+project(":web-demo1") {
     apply plugin: 'jetty'
 
     [jettyRun, jettyRunWar]*.with { httpPort = 8088 }
