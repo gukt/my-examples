@@ -1,9 +1,1 @@
-# Here are all my examples
-
-includes:
-
-* spring-examples
-* mina-examples
-* game-server-examples
-* nio-examples
-
+# Here are waiting1s api demo# w1s
